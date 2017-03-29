@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import Segundo from './Segundo';
-import Tercero from './Tercero';
+import App from './component/app/App';
+import Segundo from './component/segundo/Segundo';
+import Tercero from './component/tercero/Tercero';
 import './index.css';
 
 ReactDOM.render(

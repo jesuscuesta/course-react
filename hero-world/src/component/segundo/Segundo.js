@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Segundo.css';
-import batman from './batman.jpg';
-import wonder from './wonder.jpg';
+import batman from './../../img/batman.jpg';
+import wonder from './../../img/wonder.jpg';
 
 // Al componente Segundo, le pasamos otros dos componentes, "Header" y "Hero", y le asignamos los valores.
 class Segundo extends Component {
