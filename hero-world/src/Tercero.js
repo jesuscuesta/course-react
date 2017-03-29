@@ -3,14 +3,25 @@ import './Segundo.css';
 import batman from './batman.jpg';
 import wonder from './wonder.jpg';
 
-// Al componente Segundo, le pasamos otros dos componentes, "Header" y "Hero", y le asignamos los valores.
-class Segundo extends Component {
+// Al componente Tercero, le pasamos otros dos componentes, "Header" y "Hero", y le asignamos los valores.
+class Tercero extends Component {
   render () {
     return (
-      <div className="pageHeros">
-        <Header titulo={ 'Propiedades en React'} 
-                subtitulo={ 'Podemos ir añadiendo components a otros, pasándoles las variables que deseemos.' }
+      <Container titulo={ 'Propiedades en React - Usando ...otras'} 
+                subtitulo={ 'Podemos ir añadiendo components a otros, pasándoles las variables que deseemos. Al pasar ...otras, podemos pasarle la cantidad de variables que deseemos, sin especificarlas.' }
                 color={ '#0052cc' } />
+    );
+  }
+}
+
+class Container extends Component {
+  render () {
+    let { nombre, ...otras } = this.props;
+    /* otras no contiene a la propiedad nombre */    
+    return (
+      <div className="pageHeros">
+        {/* Pasa las otras propiedades a Header */}
+        <Header { ...otras } />
         <Hero nombre={ "Batman" } imagen={batman} alt="Batman" />
         <Hero nombre={ "Wonder Woman"} imagen={wonder} alt="Wonder Woman" />
       </div>
@@ -18,12 +29,12 @@ class Segundo extends Component {
   }
 }
 
-// El componente Hero lo llamaremos dos veces en Segundo.
+// El componente Hero lo llamaremos dos veces en Tercero.
 class Hero extends Component {
   render () {
     return(
       <div className="hero">
-        <div className="imageHero"><img src={ this.props.imagen }  alt={ this.props.nombre } /></div>
+        <div className="imageHero"><img src={ this.props.imagen } alt={ this.props.nombre } /></div>
         <p>Yo soy { this.props.nombre }</p>
       </div>
     );
@@ -47,4 +58,4 @@ class Header extends Component {
   }
 }
 
-export default Segundo;
+export default Tercero;
