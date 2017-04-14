@@ -4,6 +4,7 @@ import App from './component/app/App';
 import Segundo from './component/segundo/Segundo';
 import Tercero from './component/tercero/Tercero';
 import Cuarto from './component/cuarto/Cuarto';
+import Quinto from './component/quinto/Quinto';
 import './index.css';
 
 ReactDOM.render(
@@ -24,4 +25,9 @@ ReactDOM.render(
 ReactDOM.render(
   <Cuarto />,
   document.getElementById('cuarto')
+);
+
+ReactDOM.render(
+  <Quinto />,
+  document.getElementById('quinto')
 );

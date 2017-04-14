@@ -1630,3 +1630,19 @@ If you have ideas for more “How To” recipes that should be on this page, [le
 ## Para ver bien los archivos js
 https://github.com/babel/babel-sublime
 
+## Listado ejercicios
+### Primero
+- Ejemplo aplicación reactjs sencilla.
+
+### Segundo
+- Pasando datos entre componentes reactjs.
+
+### Tercero
+- Pasando más variables con ...otras.
+
+### Cuarto
+- Usando const en lugar de clases cuando hay que renderizar.
+
+### Quinto
+- Estados
+Ejemplo de un estado
