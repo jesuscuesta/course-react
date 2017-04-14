@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import batman from './../../img/batman.jpg';
 import wonder from './../../img/wonder.jpg';
 
+//Cuando solo vamos a renderizar, sin añadir funciones, tendrá mejor rendimiento si lo declaramos con const, en lugar de class.
 const Cuarto = () =>(
   <div className="pageHeros">
     <Header titulo={ 'Propiedades en React'} 
